@@ -1,0 +1,123 @@
+/*----------------------------------------------*/
+/*--------------------LAYOUT--------------------*/
+/*----------------------------------------------*/
+
+.full-height {
+    min-height: 100vh;
+}
+
+.sida1 {
+    background-color: aquamarine;
+}
+
+.sida2 {
+    background-color: blueviolet;
+}
+
+
+/*----------------------------------------------*/
+/*--------------------BUTTON--------------------*/
+/*----------------------------------------------*/
+
+.container {
+    display: flex;
+    justify-content: right;
+}
+
+button {
+    width: 35px;
+    height: 35px;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: fixed;
+}
+
+button span {
+    width: 48px;
+    height: 7px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    display: block;
+    background-color: black;
+    position: relative;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+button span:nth-child(odd) {
+    left: 3px;
+}
+
+button span:nth-child(2) {
+    left: -3px;
+}
+
+button:hover span:nth-child(odd) {
+    left: 0px;
+}
+
+button:hover span:nth-child(2) {
+    left: 0px;
+}
+
+
+/*----------------------------------------------*/
+/*--------------------SIDA1---------------------*/
+/*----------------------------------------------*/
+
+.sida1 {
+    background-image: url('/assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg');
+    background-size: cover;
+    background-position: 90% 70%;
+}
+
+.sida1 .header-box {
+    border: 5px solid black;
+    width: 9rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 55px;
+    left: 45px;
+    padding: 12px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.sida1 .header-box .header {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+/*----------------------------------------------*/
+/*--------------------DESKTOP-------------------*/
+/*----------------------------------------------*/
+
+@media screen and (min-width: 1000px) {
+    .sida1 .header-box {
+        width: 12rem;
+    }
+    .sida1 .header-box .link {
+        text-align: right;
+    }
+    .sida1 .header-box .link span {
+        position: relative;
+        left: 0px;
+        transition: left 0.5s ease-in-out;
+    }
+    .sida1 .header-box .link:hover span {
+        left: 10px;
+    }
+}
+
+
+
+
+section {
+    outline: 3px solid black
+}
