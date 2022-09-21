@@ -4,6 +4,17 @@
 
 body {
     font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+p {
+    font-size: 12px;
+    line-height: 180%;
+}
+
+blockquote {
+    font-size: 18px;
+    font-style: italic;
 }
 
 .full-height {
@@ -98,16 +109,20 @@ button:hover span:nth-child(2) {
     margin-bottom: 1rem;
 }
 
+.header-box > * {
+    color: black;
+}
+
 
 /*----------------------------------------------*/
 /*--------------------SIDA2---------------------*/
 /*----------------------------------------------*/
 
-/*.sida2 {
-    background-image: url('/assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg');
+.sida2 {
+    background: rgba(0, 0, 0, 0.5) url('/assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg');
     background-size: cover;
-    background-position: 50% 50%;
-} */
+    background-blend-mode: darken;
+}
 
 .sida2 {
     display: flex;
@@ -129,7 +144,6 @@ button:hover span:nth-child(2) {
 }
 
 .over {
-    color: white;
     z-index: 1;
     position: absolute;
     font-size: 5rem;
