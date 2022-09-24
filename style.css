@@ -29,6 +29,10 @@ blockquote {
     background-color: blueviolet;
 }
 
+a {
+    color: #ff007f;
+}
+
 
 /*----------------------------------------------*/
 /*--------------------BUTTON--------------------*/
@@ -118,6 +122,10 @@ button:hover span:nth-child(2) {
 /*--------------------SIDA2---------------------*/
 /*----------------------------------------------*/
 
+.grid-container {
+    display: none;
+}
+
 .sida2 {
     background: rgba(0, 0, 0, 0.5) url('/assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg');
     background-size: cover;
@@ -174,6 +182,13 @@ blockquote {
     margin-right: 15%;
 }
 
+/*.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}*/
+
 
 
 
@@ -202,6 +217,30 @@ blockquote {
 
     .sida1 .header-box .link:hover span {
         left: 10px;
+    }
+
+    .grid-container {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+        /*background-color: #2196F3;*/
+        padding: 50px;
+    }
+
+    .heading-page2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .grid-item2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        grid-row-start: 2;
+        grid-row-end: 5;
     }
 }
 
