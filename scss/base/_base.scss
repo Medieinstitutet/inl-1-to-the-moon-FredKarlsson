@@ -1,0 +1,185 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.full-height {
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.page1 {
+    background-image: url("/scss/images/Astronaut.jpg");
+    background-position: 65% 50%;
+}
+
+.container:first-child {
+    display: flex;
+    justify-content: right;
+}
+    
+.container:last-child {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid black;
+    width: 13em;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 55px;
+    left: 45px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: black;
+    .heading {
+        width: 10em;
+        align-self: center;
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 0.6rem;
+            font-size: 2.9rem;
+            font-weight: 700;
+            margin-bottom: 1em;
+        }
+    }
+    .link {
+        text-align: left;
+    }
+}
+
+.text-arrow {
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+}
+
+
+.page2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/scss/images/space.jpg");
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.space-ventures {
+    position: relative;
+    margin-bottom: 1px;
+    h2 {
+        font-size: 80px;
+        padding: 0;
+        margin: 0; 
+        span {
+            font-family: 'Times New Roman', Times, serif;
+            text-shadow: 1px 2px 10px black;
+        }
+        span:first-of-type {
+            display: block;
+            z-index: 1;
+            position: relative;
+        }
+        span:nth-of-type(2) {
+            color: grey;
+            z-index: 0;
+            position: relative;
+            top: -40px;
+            left: 40px;
+        }
+    }
+}
+
+.and-im-floating {
+    padding: 0;
+    margin: 40px 40px;
+    position: relative;
+    font-style: italic;
+    font-size: 1.2rem;
+    &::before, &::after {
+        content: '"';
+        /*Citattecknen följer inte med om man ändrar skärmstorlek*/
+        /*display: block;*/
+        display: inline;
+        position: absolute;
+        font-size: 2rem;
+    }
+    &::before {
+        top: -10px;
+        left: -10px;
+    }
+    /*&::after {
+        
+    }*/
+}
+
+.persistence-is-very {
+    display: none;
+}
+
+.pink {
+    color: rgb(189, 30, 56);
+    font-style: bold;
+}
+
+.major-tom {
+    display: none;
+}
+
+.cookies {
+    width: 100vw;
+    min-height: 20px;
+    background-color: rgb(6, 10, 66);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+    z-index: 5;
+    p {
+        max-width: 70%;
+        padding-left: 20px;
+    }
+}
+
+.glow {
+    color: rgb(250, 67, 195);
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+
+
+/*.sida1 .header-box {
+    border: 5px solid black;
+    width: 10rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 55px;
+    left: 45px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}*/
+
+/*.sida1 {
+    background-image: url('/assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg');
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+}*/
