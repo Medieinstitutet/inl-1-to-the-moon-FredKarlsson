@@ -1,8 +1,21 @@
+@import "../inl-1-to-the-moon-FredKarlsson/scss/vendor/normalize";
+@import "../inl-1-to-the-moon-FredKarlsson/scss/variables/variabless";
+@import "../inl-1-to-the-moon-FredKarlsson/scss/utilities/utilities";
+@import "../inl-1-to-the-moon-FredKarlsson/scss/base/base";
+@import "../inl-1-to-the-moon-FredKarlsson/scss/breakpoints/desktop";
+@import "../inl-1-to-the-moon-FredKarlsson/scss/components/components";
+
+
+
+
+
+
+
 /*----------------------------------------------*/
 /*--------------------LAYOUT--------------------*/
 /*----------------------------------------------*/
 
-body {
+/*body {
     font-family: 'Rubik', sans-serif;
     color: white;
 }
@@ -38,7 +51,7 @@ a {
 /*--------------------BUTTON--------------------*/
 /*----------------------------------------------*/
 
-.container {
+/*.container {
     display: flex;
     justify-content: right;
 }
@@ -87,13 +100,13 @@ button:hover span:nth-child(2) {
 /*--------------------SIDA1---------------------*/
 /*----------------------------------------------*/
 
-.sida1 {
+/*.sida1 {
     background-image: url('/assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg');
     background-size: cover;
     background-position: 90% 70%;
 }
 
-.sida1 .header-box {
+/*.sida1 .header-box {
     border: 5px solid black;
     width: 10rem;
     background-color: rgba(255, 255, 255, 0.6);
@@ -102,9 +115,9 @@ button:hover span:nth-child(2) {
     left: 45px;
     padding-left: 1rem;
     padding-right: 1rem;
-}
+}*/
 
-.sida1 .header-box .header h1 {
+/*.sida1 .header-box .header h1 {
     text-align: center;
     text-transform: uppercase;
     margin-top: 0.6rem;
@@ -122,7 +135,7 @@ button:hover span:nth-child(2) {
 /*--------------------SIDA2---------------------*/
 /*----------------------------------------------*/
 
-.grid-container {
+/*.grid-container {
     display: none;
 }
 
@@ -196,7 +209,7 @@ blockquote {
 /*--------------------DESKTOP-------------------*/
 /*----------------------------------------------*/
 
-@media screen and (min-width: 1000px) {
+/*@media screen and (min-width: 1000px) {
     .sida1 .header-box {
         width: 12rem;
     }
@@ -227,8 +240,8 @@ blockquote {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         column-gap: 10px;
         /*background-color: #2196F3;*/
-        padding: 50px;
-    }
+        /*padding: 50px;
+    /*}
 
     .heading-page2 {
         grid-column-start: 1;
@@ -253,4 +266,4 @@ section {
 
 h1 {
     outline: 3px solid black;
-}
+}*/

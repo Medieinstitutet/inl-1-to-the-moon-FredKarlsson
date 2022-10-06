@@ -1,0 +1,56 @@
+@media screen and (min-width: 1024px) {
+
+    .container:last-child {
+        width: 250px;
+        margin-top: 50px;
+        .heading h1 {
+            position: relative;
+            width: 180px;
+            padding-top: 20px;
+        }
+        .link {
+            text-align: right;
+            span {
+                position: relative;
+            left: 0px;
+            transition: left 0.5s ease-in-out;
+            }
+            &:hover span {
+                left: 10px
+            }
+        }
+    } 
+
+    .full-height.page2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 100px;
+    }
+
+    .left, .right {
+        width: 40%;
+    }
+
+    .persistence-is-very {
+        display: block;
+        background: #FFFFFF;
+        background: #FF00BB;
+        background: linear-gradient(to top left, #FF00BB 0%, #FFFFFF 50%, #E80093 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 60%;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 100;
+    }
+
+    .major-tom {
+        display: block;
+        width: 100px;
+        height: auto;
+        float: right;
+        transform: rotate(3deg);
+    }
+
+}

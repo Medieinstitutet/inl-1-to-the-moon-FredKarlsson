@@ -1,0 +1,132 @@
+/*--------------------------------------------------------------------*/
+/*------------------------------BUTTON--------------------------------*/
+/*--------------------------------------------------------------------*/
+
+
+button {
+    width: 35px;
+    height: 35px;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: fixed;
+    z-index: 3;
+    span {
+        width: 48px;
+        height: 7px;
+        margin-bottom: 6px;
+        border-radius: 8px;
+        display: block;
+        background-color: black;
+        position: relative;
+        left: 0;
+        transition: all 0.5s ease-in-out;
+        &:nth-child(odd) {
+            left: 3px;
+        }
+        &:nth-child(2) {
+            left: -3px;
+        }
+    }
+    &:hover span:nth-child(odd) {
+        left: 0px;
+    }
+    &:hover span:nth-child(2) {
+        left: 0px;
+    }
+}
+
+
+/*--------------------------------------------------------------------*/
+/*-------------------------OPEN/CLOSE BUTTON--------------------------*/
+/*--------------------------------------------------------------------*/
+
+button + .menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+button.menu-open + .menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*--------------------------------------------------------------------*/
+/*--------------------------------MENU--------------------------------*/
+/*--------------------------------------------------------------------*/
+
+.reset, .reset:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.menu {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    background-color: rgba(243, 243, 243, 0.8);
+    z-index: 2;   
+    ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 150px;
+    }
+}  
+
+
+.our-story, .space-ventures-menu, .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 48px;
+    position: relative;
+    top: 100px;
+    font-weight: bolder;
+    text-shadow: 2px 4px rgb(122, 121, 121,0.5);
+    cursor: pointer;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.our-story:hover:after, .space-ventures-menu:hover:after, .about:hover:after { 
+    content: '';
+    height: 7px;
+    width: 300px;
+    position: absolute;
+    background: #e60073;
+    border-radius: 5px;
+    display: block;
+    bottom: -3px;
+}
+
+.space-ventures-menu:hover:before, .about:hover:before { 
+    content: '';
+    height: 7px;
+    width: 180px;
+    position: absolute;
+    background: #e60073;
+    border-radius: 5px;
+    display: block;
+    top: 50px;
+}
+
+/*--------------------------------------------------------------------*/
+/*---------------------------COOKIE-BUTTON----------------------------*/
+/*--------------------------------------------------------------------*/
+
+.cookie-button {
+    width: 100px;
+    height: 30px;
+    background-color: #4f51cc;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+}
